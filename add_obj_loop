@@ -22,11 +22,6 @@
       - name: obj22
         value: 22.22.22.1/24
 
-
-# variable load file with zone and IP info for 1:1 NAT
-#  vars_files:
-#    - "./palo_object_vars.yml"
-
   tasks:
     - name: Create address object
       panos_address_object:
