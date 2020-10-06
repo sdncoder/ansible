@@ -1,7 +1,6 @@
 ---
-# Ansible-Playbook for stand-alone NGFW
-# Use this on our lab build, you will need to add Panorama groups for prod deploy
-# using loop function
+# Ansible-Playbook for stand-alone NGFW (no Panorama)
+# address object creation from interation of hashes
 
 - name: Add address object
   hosts: localhost
