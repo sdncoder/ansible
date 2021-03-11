@@ -10,3 +10,4 @@
     register: ip_int
 
   - debug: var=ip_int.stdout_lines
+
