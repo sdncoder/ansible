@@ -1,1 +1,3 @@
-# palo_alto_ansible
+# ansible
+# Palo Alto FW
+# Cisco - XE
