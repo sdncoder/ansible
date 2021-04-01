@@ -1,0 +1,19 @@
+---
+- hosts: ios
+  gather_facts: no
+
+  tasks:
+  - name: show ip int brief
+    ios_command:
+      commands:
+        - show ip int brief
+        - show ip arp
+    register: ip_int
+
+# send output of IOS command to file
+  - name: save to file
+    copy:
+      content: "{{ ip_int.stdout_lines }}"
+      dest: /etc/ansible/file.txt
+
+  - debug: var=ip_int.stdout_lines
