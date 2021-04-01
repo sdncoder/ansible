@@ -8,6 +8,7 @@
       commands:
         - show ip int brief
         - show ip arp
+    # create variable from output of task ip_int
     register: ip_int
 
 # send output of IOS command to file
