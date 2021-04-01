@@ -16,5 +16,5 @@
     copy:
       content: "{{ ip_int.stdout_lines }}"
       dest: /etc/ansible/file.txt
-
+    # print executed output, send ip_int varible to standard output
   - debug: var=ip_int.stdout_lines
