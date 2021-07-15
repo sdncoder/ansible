@@ -1,4 +1,5 @@
 ---
+-- playbook to send ip interface to standard linux output
 - hosts: ios
   gather_facts: no
 
