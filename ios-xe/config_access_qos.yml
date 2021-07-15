@@ -6,7 +6,9 @@
      ios_config:
        lines:
        - remark RTP VOIP and TELEPRESENCE
+       - remark ensure VOIP TCP 5060 is added
        - permit udp any any range 16384 32767 dscp ef
+       - permit TCP 5060
        parents: ip access-list extended VOIP_ACL
 
    - name: qos SIGNALING_ACL
